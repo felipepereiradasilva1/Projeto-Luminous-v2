@@ -61,19 +61,20 @@ a.active, a:hover {
     transition: .5s;
 }
 
-.sejabemvindo{
+/* banner */
+.banner {
     border-bottom: #f7e70b 3px solid;
     height: 550px;
-    background: #adadad url(./pexels-daniel-reche-1556704.jpg) no-repeat scroll;
+    background: #adadad url(/img/pexels-daniel-reche-1556704.jpg) no-repeat scroll;
     background-size: cover;
 }
 
-.conteiner2{
+.bannerBox {
  margin: 150px;
-   color: #f7e70b;
+   color: #fff;
    width: 80%;
 }
 
-.conteiner2 h1{
+.bannerBox h1 {
     font-size: 90px;
 }
