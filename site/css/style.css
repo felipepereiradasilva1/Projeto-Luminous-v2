@@ -64,15 +64,15 @@ a.active, a:hover {
 /* banner */
 .banner {
     border-bottom: #f7e70b 3px solid;
-    height: 550px;
+    height: 510px;
     background: #adadad url(/img/pexels-daniel-reche-1556704.jpg) no-repeat scroll;
     background-size: cover;
 }
 
 .bannerBox {
- margin: 150px;
-   color: #fff;
-   width: 80%;
+    margin: 70px 150px 150px 150px;
+    color: #f7e70b;
+    width: 80%;
 }
 
 .bannerBox h1 {
