@@ -65,7 +65,7 @@ a.active, a:hover {
 .banner {
     border-bottom: #f7e70b 3px solid;
     height: 510px;
-    background: #adadad url(/img/pexels-daniel-reche-1556704.jpg) no-repeat scroll;
+    background: #adadad url(../img/pexels-daniel-reche-1556704.jpg) no-repeat scroll;
     background-size: cover;
 }
 
@@ -84,7 +84,7 @@ a.active, a:hover {
 .contato {
     border-bottom: #f7e70b 3px solid;
     height: 550px;
-    background: #adadad url(background-contato.jpg) no-repeat scroll;
+    background: #adadad url(../img/background-contato.jpg) no-repeat scroll;
     background-size: cover;
 }
 
