@@ -88,7 +88,7 @@ a.active, a:hover {
     background-size: cover;
 }
 
-.conteiner12 {
+.contatoBox {
     margin: 150px;
     color: #f7e70b;
     width: 80%;
@@ -96,10 +96,8 @@ a.active, a:hover {
     
 }
 
-.conteiner12 h1 {
+.contatoBox h1 {
     margin-top: -50px;
-
-
 }
 
 .contat {
