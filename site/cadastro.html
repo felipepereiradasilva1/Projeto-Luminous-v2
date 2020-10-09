@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar"> 
+        <div class="container">
+            <label class="logo">LUMINOUS</label>
+            <img src="img/logo.png">
+            <ul> 
+                <li><a href="cadastro.html">home</a></li>
+                <li><a href="#">login</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+    <div class="mainContainer">    
+        <h1>Cadastre sua empresa</h1>
+        <form id="registerForm">
+            <div class="fullBox">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu E-mail" data-min-legth="3">
+            </div>
+            <div class="halfBox spacing">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+            </div>
+            <div class="halfBox">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome">
+            </div>
+            <div class="halfBox spacing">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+            </div>
+            <div class="halfBox">
+                <label for="confirmacaoDeSenha">Confirmação de senha</label>
+                <input type="password" name="confirmacaoDeSenha" id="confirmacaoDeSenha" placeholder="Digite novamente sua senha">
+            </div>
+            <div class="fullBox">
+                <input type="checkbox" name="termosDeUso" id="termosDeUso">
+                <label for="termosDeUso" id="termosDeUso-label">Eu li e Aceito os <a href="#">termos de uso</a></label>
+            </div>
+            <div class="">
+                <input type="submit" id="btNext" value="next">
+            </div>
+        </form>
+    </div>
+    </div>
+    <p class="errorValidation template"></p>
+</body>
+</html>
