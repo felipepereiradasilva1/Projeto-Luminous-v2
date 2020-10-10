@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
 }
 
 body {
@@ -50,8 +56,6 @@ body {
 
 .navbar a {
     border-radius: 5px;
-    color: #fff;
-    text-decoration: none;
     padding: 7px 13px;
 }
 
@@ -223,9 +227,14 @@ form { /* estilisa formulario*/
 
 #termosDeUso {
     margin-right: 5px;
+    margin-bottom: 10px;
 }
 
 #termosDeUso, #termosDeUso-label {
     display: inline-block;
     width: auto;
+}
+
+.template { /* classe usada para algo começar invisivel*/
+    display: none;
 }

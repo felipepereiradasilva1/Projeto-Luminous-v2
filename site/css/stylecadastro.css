@@ -1,0 +1,10 @@
+body {
+    display: grid;
+    background-image: url('../img/fundo.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ganbiarra {
+    padding-bottom: 10px;
+}
