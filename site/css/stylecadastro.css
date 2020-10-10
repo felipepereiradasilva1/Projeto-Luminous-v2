@@ -8,3 +8,8 @@ body {
 .ganbiarra {
     padding-bottom: 10px;
 }
+
+.mainContainer img {
+    width: 100px;
+    margin-left: 175px;
+}
