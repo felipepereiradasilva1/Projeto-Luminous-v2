@@ -5,11 +5,6 @@
     border: none;
 }
 
-a {
-    color: #fff;
-    text-decoration: none;
-}
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     display: grid;
@@ -57,6 +52,8 @@ body {
 .navbar a {
     border-radius: 5px;
     padding: 7px 13px;
+    color: #fff;
+    text-decoration: none;
 }
 
 a.active, a:hover {
@@ -237,4 +234,9 @@ form { /* estilisa formulario*/
 
 .template { /* classe usada para algo começar invisivel*/
     display: none;
+}
+
+.ganbiarra a {
+    color: #fff;
+    text-decoration: none;
 }
