@@ -258,13 +258,13 @@ form { /* estilisa formulario*/
     margin: auto;
 }
 
-h1{
+.sobre h1{
     color: yellowgreen;
     margin-top: 20px;
     
 }
 
-h2{
+.sobre h2{
     color: yellowgreen;
     margin-top: 50px;
     
@@ -284,7 +284,7 @@ h2{
     
 }
 
-img{
+.sobre img{
     float:right;
     width: 400px;
     margin-top: -400px;
