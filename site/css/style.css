@@ -240,3 +240,53 @@ form { /* estilisa formulario*/
     color: #fff;
     text-decoration: none;
 }
+
+/* PARTE DO SOBRE*/
+
+.sobre{
+    background-color: gray;
+    width: 100%;
+    height: 550px;
+    background: scroll; 
+    background-size:  cover;
+    background-color:#363636 ;
+}
+
+.sobrebox {
+    height: 70px;
+    width: 80%;
+    margin: auto;
+}
+
+h1{
+    color: yellowgreen;
+    margin-top: 20px;
+    
+}
+
+h2{
+    color: yellowgreen;
+    margin-top: 50px;
+    
+}
+
+.sobre p{
+    width: 40%;
+    font-weight: bold;
+    color: yellowgreen;
+    text-align: left;
+    margin-top: 30px;
+    font-size: 15px;
+    text-justify:auto;
+    font-family: Arial, Helvetica, sans-serif;
+    /*opacity: 0.75;*/
+    
+}
+
+img{
+    float:right;
+    width: 400px;
+    margin-top: -400px;
+}
+
+/*FIM DO SOBRE*/
