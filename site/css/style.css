@@ -66,7 +66,7 @@ a.active, a:hover {
 .banner {
     border-bottom: #f7e70b 3px solid;
     height: 510px;
-    background: #adadad url(../img/pexels-daniel-reche-1556704.jpg) no-repeat scroll;
+    background: #adadad url(../img/pexels-daniel-reche-1556704.jpg) no-repeat fixed;
     background-size: cover;
 }
 
@@ -90,17 +90,14 @@ a.active, a:hover {
 }
 
 .contatoBox {
-    margin: 78px;
-    margin-top: -10px;
+    margin-left: 78px;
+    margin-top: 0;
     color: #f7e70b;
     width: 80%;
     font-family: 'Roboto', sans-serif;
     position: relative;
+    padding-top: 50px;
     
-}
-
-.contatoBox h1 {
-    margin-top: 10px;
 }
 
 .contat {
@@ -247,12 +244,12 @@ form { /* estilisa formulario*/
 /* PARTE DO SOBRE*/
 
 .sobre{
-    background-color: gray;
+    
     width: 100%;
     height: 585px;
     background: scroll; 
     background-size:  cover;
-    background-color:#363636 ;
+    background-color:#111111 ;
 }
 
 .sobrebox {
@@ -262,13 +259,13 @@ form { /* estilisa formulario*/
 }
 
 .sobre h1{
-    color: yellowgreen;
+    color: yellow;
     margin-top: 20px;
     
 }
 
 .sobre h2{
-    color: yellowgreen;
+    color: yellow;
     margin-top: 50px;
     
 }
@@ -276,7 +273,7 @@ form { /* estilisa formulario*/
 .sobre p{
     width: 40%;
     font-weight: bold;
-    color: yellowgreen;
+    color: yellow;
     text-align: left;
     margin-top: 30px;
     font-size: 15px;
