@@ -147,7 +147,8 @@ a.active, a:hover {
 .botao:hover ,.botao:active {
     background-color: #363636;
     color: yellow;
-    transition: .5s;
+    transition: .5s all;
+    transform: scale(1.2);
 }
 
 /* formulario de cadastro */
