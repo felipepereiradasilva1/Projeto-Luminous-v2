@@ -139,6 +139,11 @@ a.active, a:hover {
     margin-top: 24px;
 }
 
+.contato textarea{
+    font-size: 17px;
+    padding: 10px;
+}
+
 .botao:hover ,.botao:active {
     background-color: #363636;
     color: yellow;
