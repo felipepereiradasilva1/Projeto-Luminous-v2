@@ -27,14 +27,15 @@
     <!--Parte do contato, caso queira alterar a classe da div pode, coloquei um nome diferente pra evitar conflito-->
 
     <div class="contato">
-        <div class="contatoBox">
+        <div class="contatoBox" >
             <h1>Fale Conosco</h1> <br>
-            <input type="text" class="contat" id="name" placeholder="Nome*">
-            <input type="tel" class="contat" id="telefone" placeholder="Telefone*"> 
-            <input type="email" class="contat" id="e-mail" placeholder="E-mail*"> 
+            <form>
+            <input type="text" class="contat" id="name" placeholder="Nome*" required>
+            <input type="tel" class="contat" id="telefone" placeholder="Telefone*" required> 
+            <input type="email" class="contat" id="e-mail" placeholder="E-mail*" required> 
             <textarea name="mensagem" id="" cols="45" rows="10" placeholder="Digite sua mensagem*"></textarea> 
             <input type="submit" value="Enviar" class="botao">
-            
+            </form>
         </div>
     </div>
     <!--Fim do contato-->

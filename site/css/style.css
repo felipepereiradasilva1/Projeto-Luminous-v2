@@ -188,7 +188,7 @@ input:focus, label:focus { /* classe usada para retirar a linha do input */
     font-size: 1,6rem;
 }
 
-form { /* estilisa formulario*/
+.mainContainer form { /* estilisa formulario*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
