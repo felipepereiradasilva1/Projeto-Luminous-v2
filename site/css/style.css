@@ -84,7 +84,7 @@ a.active, a:hover {
 
 .contato {
     border-bottom: #f7e70b 3px solid;
-    height: 580px;
+    height: 600px;
     background: #adadad url(../img/background-contato.jpg) no-repeat scroll;
     background-size: cover;
 }
