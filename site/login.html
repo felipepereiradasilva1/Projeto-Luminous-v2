@@ -35,7 +35,7 @@
                 <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
             </div>
             <div class="fullBox">
-                <input type="submit" id="login" value="login" onclick="trocaPagina()">
+                <input type="submit" id="login" value="login" >
             </div>
             </form>
         </div>
@@ -43,7 +43,8 @@
 </body>
 </html>
 <script>
-    function trocaPagina(){
-        location.href = 'index.html'
-    }
+    document.querySelector('form').addEventListener('submit', event => { 
+        event.preventDefault()
+        location.href = 'index.html';
+    });
 </script>

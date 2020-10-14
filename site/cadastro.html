@@ -49,7 +49,7 @@
                 <label for="termosDeUso" id="termosDeUso-label">Eu li e Aceito os <a href="#">termos de uso</a></label>
             </div>
             <div class="fullBox">
-                <input type="submit" id="btNext" value="next" onclick="trocaForm()">
+                <input type="submit" id="btNext" value="next">
             </div>
         </form>
     </div>
@@ -95,21 +95,26 @@
                     <input type="text" name="estado" id="estado" placeholder="Digite seu estado" required>
                 </div>
                 <div class="fullBox">
-                    <input type="submit" id="btSingUp" value="sing up" onclick="trocaPagina()">
+                    <input type="submit" id="btSingUp" value="sing up">
                 </div>
             </form>
             
         </div>
     </div>
     </div>
-    <p class="errorValidation template"></p>
 </body>
 </html>
 
 <script>
-    function trocaPagina(){
+    
+    document.querySelector('#form1').addEventListener('submit', event => { 
+        event.preventDefault()
+        trocaForm()
+    });
+    document.querySelector('#form2').addEventListener('submit', event => { 
+        event.preventDefault()
         location.href = 'index.html'
-    }
+    });
     function trocaForm() {
         form1.style = 'display: none;';
         form2.style = 'display: block;';
