@@ -253,12 +253,12 @@ input:focus, label:focus { /* classe usada para retirar a linha do input */
 /* PARTE DO SOBRE*/
 
 .sobre{
-    
     width: 100%;
     height: 585px;
     background: scroll; 
     background-size:  cover;
     background-color:#111111 ;
+    border-bottom: 3px yellow solid;
 }
 
 .sobrebox {
