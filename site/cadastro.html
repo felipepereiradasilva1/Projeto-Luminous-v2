@@ -94,10 +94,11 @@
                     <label for="estado">Estado:</label>
                     <input type="text" name="estado" id="estado" placeholder="Digite seu estado" required>
                 </div>
+                <div class="fullBox">
+                    <input type="submit" id="btSingUp" value="sing up" onclick="trocaPagina()">
+                </div>
             </form>
-            <div class="ganbiarra">
-                <a href="index.html"><input type="submit" id="btSingUp" value="sing up"></a>
-            </div>
+            
         </div>
     </div>
     </div>
@@ -106,6 +107,9 @@
 </html>
 
 <script>
+    function trocaPagina(){
+        location.href = 'index.html'
+    }
     function trocaForm() {
         form1.style = 'display: none;';
         form2.style = 'display: block;';

@@ -22,9 +22,10 @@
     <!-- tela de login -->
     <div class="container">
         <div class="mainContainer">
+            
             <img src="img/avatar.png" alt="">
             <h1>Login</h1>
-
+            <form>
             <div class="fullBox">
                 <label for="email">Email:</label>
                 <input type="email" name="email" id="email" placeholder="Digite seu Email" required>
@@ -33,10 +34,16 @@
                 <label for="senha">Senha:</label>
                 <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
             </div>
-            <div class="ganbiarra">
-                <a href="index.html"><input type="submit" id="login" value="login"></a>
+            <div class="fullBox">
+                <input type="submit" id="login" value="login" onclick="trocaPagina()">
             </div>
+            </form>
         </div>
     </div>
 </body>
 </html>
+<script>
+    function trocaPagina(){
+        location.href = 'index.html'
+    }
+</script>
