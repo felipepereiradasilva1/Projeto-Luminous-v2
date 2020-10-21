@@ -21,8 +21,8 @@ function trc5000() {
 }
 
 function ldr(){
-    min = 0;
-    max = 1023
+    min = 500;
+    max = 1000;
 
     let random = Math.floor(Math.random()*(max-min+1)+min);
 
