@@ -21,7 +21,6 @@ body {
     height: 70px;
     background-color: #111111;
     border-bottom: 3px yellow solid;
-    box-shadow: 0 0px 10px yellow;
 }
 
 .logo {
@@ -174,10 +173,8 @@ input:focus, label:focus { /* classe usada para retirar a linha do input */
 
 .mainContainer { /* div principal onde contem os intens */
     width: 500px;
-    margin-left: auto;
-    margin-right: auto;
     background-color: white;
-    margin-top: 25px;
+    margin: 25px auto;
     border-radius: 10px;
     padding: 25px 25px 0px 25px;
 }
@@ -298,7 +295,8 @@ input:focus, label:focus { /* classe usada para retirar a linha do input */
 
 .solucao {
     background-color: #111111;
-    border-bottom: #f7e70b 3px solid;
+    /* border-bottom: #f7e70b 3px solid; */
+    padding: 20px 0;
 }
 
 .solucaoBox{
@@ -315,10 +313,9 @@ input:focus, label:focus { /* classe usada para retirar a linha do input */
 
 
 .solucao img {
-    margin-top: 190px;
+
     float: left;
     width: 400px;
-    margin-top: -400px;
 }
 
 /* FIM DO SOLUÇÃO*/
@@ -326,12 +323,12 @@ input:focus, label:focus { /* classe usada para retirar a linha do input */
  /* COMEÇO RODAPÉ */
 
  .futher {
-     background-color: #202020;
-     margin: 0px;
-     color: #f7e70b;
-     height: 100px;
-     border-bottom: #0f0f0f 4px solid;
-
+    background-color: #202020;
+    margin: 0px;
+    color: #f7e70b;
+    height: 100px;
+    border-bottom: #0f0f0f 4px solid;
+    border-top: #f7e70b 3px solid;
  }
 
  .futher h2 {
