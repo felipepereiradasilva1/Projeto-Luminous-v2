@@ -295,8 +295,9 @@ input:focus, label:focus { /* classe usada para retirar a linha do input */
 
 .solucao {
     background-color: #111111;
-    /* border-bottom: #f7e70b 3px solid; */
     padding: 20px 0;
+    background: url(/img/fundoSolucao2.jpg) no-repeat scroll;
+    background-position: -400px;
 }
 
 .solucaoBox{
