@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="calculadora">
+        <div class="container">
+            <h1>Calculadora Financeira</h1>
+            <h3>Qual a média em metros quadrados?</h3>
+            <input id="inMetros" placeholder="Ex: 10m²"> <br> <br>
+            <h3>Quantos comôdos?</h3>
+            <input id="inComodos" placeholder="Ex: 12"> <br> <br>
+            <button onclick="calcular()">Calcular</button> <br>
+            <div id="div_resultado"></div>
+            <u><i>Deus é Fiel</i></u>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+
+    function calcular() {
+        var metros = Number(inMetros.value);
+        var comodos = Number(inComodos.value);
+        var metrosComodos = metros * comodos;
+        var resultado = metrosComodos * 100
+        div_resultado.innerHTML = `O valor de nossos serviços será de R$${resultado}`;
+    }
+
+</script>
