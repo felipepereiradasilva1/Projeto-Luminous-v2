@@ -241,10 +241,6 @@ input:focus, label:focus { /* classe usada para retirar a linha do input */
     display: none;
 }
 
-.ganbiarra a {
-    color: #fff;
-    text-decoration: none;
-}
 
 /* PARTE DO SOBRE*/
 
@@ -296,7 +292,7 @@ input:focus, label:focus { /* classe usada para retirar a linha do input */
 .solucao {
     background-color: #111111;
     padding: 20px 0;
-    background: url(/img/fundoSolucao2.jpg) no-repeat scroll;
+    background: url(../img/fundoSolucao2.jpg) no-repeat scroll;
     background-position: -400px;
 }
 
@@ -321,27 +317,27 @@ input:focus, label:focus { /* classe usada para retirar a linha do input */
 
 /* FIM DO SOLUÇÃO*/
 
- /* COMEÇO RODAPÉ */
+/* COMEÇO RODAPÉ */
 
- .futher {
+.futher {
     background-color: #202020;
     margin: 0px;
     color: #f7e70b;
     height: 100px;
     border-bottom: #0f0f0f 4px solid;
     border-top: #f7e70b 3px solid;
- }
+}
 
- .futher h2 {
-     margin-top: 50px;
- }
+.futher h2 {
+    margin-top: 50px;
+}
 
- .futher img {
-     width: 50px;
-     float: left;
-     margin-top: -25px;
+.futher img {
+    width: 50px;
+    float: left;
+    margin-top: -25px;
 
- }
+}
 
 .copyright {
     float: right;
@@ -349,4 +345,8 @@ input:focus, label:focus { /* classe usada para retirar a linha do input */
 }
 
  
- /* Fim rodapé */
+/* Fim rodapé */
+.ganbiarra {
+    height: 70vh;
+    position: relative;
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,14 @@
     <link rel="stylesheet" href="css/stylecadastro.css">
     <title>cadastro</title>
 </head>
+
 <body>
     <!-- navbar -->
-    <div class="navbar"> 
+    <div class="navbar">
         <div class="container">
             <label class="logo">LUMINOUS</label>
             <img src="img/logo.png">
-            <ul> 
+            <ul>
                 <li><a href="index.html">home</a></li>
                 <li><a href="login.html">Login</a></li>
             </ul>
@@ -21,46 +23,48 @@
     </div>
     <!-- cadastro parte 1 -->
     <div class="container">
-        <div class="mainContainer" id="form1">    
-        <h1>Cadastre seu usuario</h1>
-        <form>
-            <div class="fullBox">
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" placeholder="Digite seu E-mail" required>
-            </div>
-            <div class="halfBox spacing">
-                <label for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
-            </div>
-            <div class="halfBox">
-                <label for="sobrenome">Sobrenome:</label>
-                <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome" required>
-            </div>
-            <div class="halfBox spacing">
-                <label for="senha">Senha:</label>
-                <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
-            </div>
-            <div class="halfBox">
-                <label for="confirmacaoDeSenha">Confirmação de senha:</label>
-                <input type="password" name="confirmacaoDeSenha" id="confirmacaoDeSenha" placeholder="Digite novamente sua senha" required>
-            </div>
-            <div class="fullBox">
-                <input type="checkbox" name="termosDeUso" id="termosDeUso">
-                <label for="termosDeUso" id="termosDeUso-label">Eu li e Aceito os <a href="#">termos de uso</a></label>
-            </div>
-            <div class="fullBox">
-                <input type="submit" id="btNext" value="Avançar">
-            </div>
-        </form>
-    </div>
-    <!-- cadastro parte 2 -->
-    <div class="container">
+        <div class="mainContainer" id="form1">
+            <h1>Cadastre seu usuario</h1>
+            <form>
+                <div class="fullBox">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu E-mail" required>
+                </div>
+                <div class="halfBox spacing">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+                </div>
+                <div class="halfBox">
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome" required>
+                </div>
+                <div class="halfBox spacing">
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+                </div>
+                <div class="halfBox">
+                    <label for="confirmacaoDeSenha">Confirmação de senha:</label>
+                    <input type="password" name="confirmacaoDeSenha" id="confirmacaoDeSenha"
+                        placeholder="Digite novamente sua senha" required>
+                </div>
+                <div class="fullBox">
+                    <input type="checkbox" name="termosDeUso" id="termosDeUso">
+                    <label for="termosDeUso" id="termosDeUso-label">Eu li e Aceito os <a href="#">termos de
+                            uso</a></label>
+                </div>
+                <div class="fullBox">
+                    <input type="submit" id="btNext" value="Avançar">
+                </div>
+            </form>
+        </div>
+        <!-- cadastro parte 2 -->
         <div class="mainContainer template" id="form2">
             <h1>Cadastre sua empresa</h1>
-            <form >
+            <form>
                 <div class="halfBox spacing">
                     <label for="nomeEmpresa">Nome Empresa:</label>
-                    <input type="text" name="nomeEmpresa" id="nomeEmpresa" placeholder="Digite o nome de sua empresa" required>
+                    <input type="text" name="nomeEmpresa" id="nomeEmpresa" placeholder="Digite o nome de sua empresa"
+                        required>
                 </div>
                 <div class="halfBox">
                     <label for="cnpj">CNPJ:</label>
@@ -98,39 +102,76 @@
                     <input type="submit" id="btSingUp" value="Finalizar">
                 </div>
             </form>
-            
+        </div>
+        <div class="ganbiarra template" id="form3">
+        <div class="mainContainer ">
+            <h1>Orçamento</h1>
+            <form id="formOrcamento">
+                <div class="fullBox">
+                    <label for="inComodos">Quantidade de comôdos?</label>
+                    <input type="text" name="inComodos" id="inComodos" placeholder="Ex: 10m²">
+                </div>
+                <div class="fullBox">
+                    <label for="inMetragem">Qual a média em metros quadrados?</label>
+                    <input type="text" name="inMetragem" id="inMetragem" placeholder="Ex: 10m²">
+                </div>
+                <div class="fullBox">
+                    <input type="submit" id="" value="consultar">
+                </div>
+            </form>
+            <form id="orcamento"></form>
         </div>
     </div>
-    </div>
+
+</div>
+
 
     <!-- Começo rodapé -->
-
-    <div class="futher">
-        <div class="container">
-            <div class="futherBox">
-                <img src="img/logo.png">
-                <h2>LUMINOUS</h2> 
-                <span class="copyright">© 2020 copyright - Luminous</span>
+    <footer>
+        <div class="futher">
+            <div class="container">
+                <div class="futherBox">
+                    <img src="img/logo.png">
+                    <h2>LUMINOUS</h2>
+                    <span class="copyright">© 2020 copyright - Luminous</span>
+                </div>
             </div>
         </div>
-    </div>
-    
-        <!-- Fim Rodapé -->
+    </footer>
+    <!-- Fim Rodapé -->
 </body>
+
 </html>
 
 <script>
-    
-    document.querySelector('#form1').addEventListener('submit', event => { 
+    document.querySelector('#form1').addEventListener('submit', event => {
         event.preventDefault()
-        trocaForm()
+        trocaForm('none', 'block', 'none')
     });
-    document.querySelector('#form2').addEventListener('submit', event => { 
+    document.querySelector('#form2').addEventListener('submit', event => {
+        event.preventDefault()
+        trocaForm('none', 'none', 'block')
+    });
+    document.querySelector('#form3').addEventListener('submit', event => {
+        event.preventDefault()
+        calcular()
+    });
+    document.querySelector('#orcamento').addEventListener('submit', event => {
         event.preventDefault()
         location.href = 'index.html'
     });
-    function trocaForm() {
-        form1.style = 'display: none;';
-        form2.style = 'display: block;';
+
+    function trocaForm(a, b, c) {
+        form1.style = 'display: ' + a + ';';
+        form2.style = 'display: ' + b + ';';
+        form3.style = 'display: ' + c + ';';
+    }
+    function calcular() {
+        var metros = Number(inMetragem.value);
+        var comodos = Number(inComodos.value);
+        var metrosComodos = metros * comodos;
+        var resultado = metrosComodos * 100
+        orcamento.innerHTML = `O valor de nossos serviços será de R$${resultado} mensais deseja contratar? <input type="submit" id="contrtar" value="contratar">`;
+        formOrcamento.style = 'display: none;';
     }
 </script>
