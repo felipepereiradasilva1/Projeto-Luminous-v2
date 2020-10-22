@@ -15,7 +15,7 @@ body {
     margin: auto;
 }
 
-/* navibar */
+/* navbar */
 .navbar {
     width: 100%;
     height: 70px;
@@ -292,7 +292,11 @@ input:focus, label:focus { /* classe usada para retirar a linha do input */
 .solucao {
     background-color: #111111;
     padding: 20px 0;
+<<<<<<< HEAD
     background: url(../img/fundoSolucao2.jpg) no-repeat scroll;
+=======
+    background: url(/img/fundoSolucao2.jpg) no-repeat fixed;
+>>>>>>> 723119cbb755691a518839bb914c8a0747028732
     background-position: -400px;
 }
 
