@@ -30,6 +30,7 @@ aside{
     display: flex;
     flex-direction: column;
     border-right: 3px solid yellow;
+    height: 100vh;
 }
 
 
