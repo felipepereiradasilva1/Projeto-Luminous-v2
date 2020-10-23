@@ -1,31 +1,32 @@
-body{
-    width: ;
+body {
+    background-color: #000000;
 }
 
 
 
 .dash-page{
     display: flex;
-    height: 98vh;
-    justify-content: space-between;
+    /* height: 98vh; */
+    /* justify-content: space-between; */
 }
-
+/* 
 aside .container{
     margin-top: -200px;
     width: 90%;
     margin: auto;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 800px;
-}
+} */
 
 aside{
-    color: white;
-    width: 30vw;
-    background: linear-gradient(329.54deg, 	#00BFFF 0%, #000000 100%);
+    color: yellow;
+    width: 30%;
+    background: linear-gradient(0deg, 	white 90%, yellow 100%);
     /* height: clamp(200rem, 100vh, 400rem); */
-    height: 98vh;
+    /* height: calc(100vh - 70px); */
     display: flex;
     flex-direction: column;
     border-right: 3px solid yellow;
@@ -33,16 +34,16 @@ aside{
 
 
 aside .container .perf{
-    margin-top: 10px;
+    margin: 10px 0;
     width: 100%;
-    height: 300px;
-    background-color: black;
+    /* height: 300px; */
+    background-color: #111111;
 }
 
 aside .container .relatorio{
     width: 100%;
     height: 400px;
-    background-color: black;
+    background-color: #111111;
 }
 
 
@@ -54,13 +55,16 @@ aside .container .perf header{
     border-bottom: 1px solid white;
 }
 
+aside h1 {
+    padding: 10px;
+}
 
 aside .container .relatorio header{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid yellow;
 }
 
 .perf .container{
@@ -68,44 +72,59 @@ aside .container .relatorio header{
     width: 80;
     height: 250px;
     display: flex;
-    margin: auto;
+    /* margin: auto; */
     padding: 20px;
     line-height: .1;
 }
- 
-#de {
-    width: 90%;
-    float:left; 
-    height: 50px;
 
+.opitons{
+    display: flex;
+    color: yellow;
+    padding: 20px;
+    
 }
 
-#ate{
-    margin-top: 0;
-    width: 50%;
-    float:left; 
+.opitons .spacing {
+    margin-right: 5rem;
+}
+
+.opitons label {
+    margin-right: .3rem;
+}
+
+.de {
+    /* width: 90%; */
+    /* float: left;  */
+    height: 50px;
+    width: 150px;
+}
+
+.ate{
+    width: 150px;
+    /* width: 50%; */
+    /* float:left;  */
     height: 50px;
 }
 
 #sala{
-    width: 50%;
+    /* width: 50%; */
     height: 20px;
-    float: right;
+    /* float: left; */
 }
 
 /* fim do aside */
 
 .dashbord{
-    width: 70vw;
-    background-color: black;
+    width: 70%;
+    background-color: #111111;
     text-align: right;
 }
 
-#c_grafico2{
-    width: clamp(80rem, 80vw, 20rem);
-    margin-top: 70px;
+/* #c_grafico2{
+    width: 70%; 
+    margin-top: 150px;
     margin-bottom: 30px;
     height: 70px;
 
-}
+} */
 
