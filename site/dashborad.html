@@ -35,18 +35,6 @@
 	<div class="dash-page">
 		<aside>
 			<div class="container">
-				<div class="perf" style="display: none;">
-					<header>
-						<h1>Dashbord Performace</h1>
-					</header>
-					<div>
-						<div class="container" >
-							
-							
-						</div>
-					</div>
-				</div>
-
 				<div class="relatorio">
 					<header>
 						<h1>Relatório</h1>
@@ -58,28 +46,28 @@
 		<div class="dashbord">
 			<canvas id="c_grafico2"></canvas>
 		<div class="opitons">	
+			<div class="sala">
 			<label for="sala">Escolha seu comodo:</label>
-			<select name="" id="sala" class="spacing">
+			<select name="" id="sala">
 				<option value="0">-Selecione a Sala -</option>
 				<option value="1">Sala 1</option>
 				<option value="2">Sala 2</option>
 			</select>
-			<label>Período:</label>
-			<div class="de spacing"> 
-				<label for="comeco">DE:</label> 
-				<select name="" id="comeco">
-					<option value="0">-Começo-</option>
-					<option value="1">01/01/2020</option>
-				</select> 
 			</div>
+			<div class="periodo">
+			<label>Período </label>
+			 
+			<label for="comeco">de:</label> 
+			<select name="" id="comeco">
+				<option value="0">-Começo-</option>
+				<option value="1">01/01/2020</option>
+			</select> 
 
-
-			<div class="ate"> 
-				<label for="termino">ATÉ:</label> 
-				<select name="" id="termino" style="width: 50%;">
-					<option value="0">-Término-</option>
-					<option value="1">01/05/2020</option>
-				</select>
+			<label for="termino">Até:</label> 
+			<select name="" id="termino">
+				<option value="0">-Término-</option>
+				<option value="1">01/05/2020</option>
+			</select>
 			</div>
 		</div>
 		</div>
