@@ -4,11 +4,12 @@ body {
 
 
 
-.dash-page{
+.dash-page {
     display: flex;
     /* height: 98vh; */
     /* justify-content: space-between; */
 }
+
 /* 
 aside .container{
     margin-top: -200px;
@@ -21,11 +22,11 @@ aside .container{
     height: 800px;
 } */
 
-aside{
+aside {
     color: yellow;
     width: 30%;
     padding: 20px;
-    background: linear-gradient(0deg, 	white 90%, yellow 100%);
+    background: linear-gradient(0deg, white 90%, yellow 100%);
     /* height: clamp(200rem, 100vh, 400rem); */
     /* height: calc(100vh - 70px); */
     border-right: 3px solid yellow;
@@ -34,11 +35,11 @@ aside{
 
 
 
-aside .container .relatorio{
+aside .container .relatorio {
     width: 333px;
     height: 450px;
     background-color: #111111;
-    
+
 }
 
 aside .container {
@@ -50,7 +51,7 @@ aside h1 {
     padding: 10px;
 }
 
-aside .container .relatorio header{
+aside .container .relatorio header {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-top: 20px;
     margin-left: 20px;
@@ -60,12 +61,12 @@ aside .container .relatorio header{
 
 
 
-.opitons{
+.opitons {
     display: flex;
     color: yellow;
     padding: 20px;
     justify-content: space-between;
-    
+
 }
 
 .opitons .spacing {
@@ -80,7 +81,7 @@ aside .container .relatorio header{
     width: 80px;
 }
 
-#sala{
+#sala {
     /* width: 50%; */
     height: 20px;
     /* float: left; */
@@ -88,7 +89,7 @@ aside .container .relatorio header{
 
 /* fim do aside */
 
-.dashbord{
+.dashbord {
     width: 70%;
     background-color: #111111;
     text-align: right;
@@ -101,4 +102,3 @@ aside .container .relatorio header{
     height: 70px;
 
 } */
-

@@ -54,7 +54,8 @@ body {
     text-decoration: none;
 }
 
-a.active, a:hover {
+a.active,
+a:hover {
     background-color: #363636;
     color: yellow;
     transition: .5s;
@@ -78,7 +79,7 @@ a.active, a:hover {
     font-size: 90px;
 }
 
- /* Começo CSS Contato */
+/* Começo CSS Contato */
 
 .contato {
     border-bottom: #f7e70b 3px solid;
@@ -95,7 +96,7 @@ a.active, a:hover {
     font-family: 'Roboto', sans-serif;
     position: relative;
     padding-top: 50px;
-    
+
 }
 
 .contat {
@@ -109,7 +110,7 @@ a.active, a:hover {
     padding-left: 10px;
     width: 20%;
     display: block;
-    
+
 }
 
 .msg {
@@ -137,12 +138,13 @@ a.active, a:hover {
     margin-top: 24px;
 }
 
-.contato textarea{
+.contato textarea {
     font-size: 17px;
     padding: 10px;
 }
 
-.botao:hover ,.botao:active {
+.botao:hover,
+.botao:active {
     background-color: #363636;
     color: yellow;
     transition: .5s all;
@@ -151,27 +153,32 @@ a.active, a:hover {
 
 /* formulario de cadastro */
 
-.mainContainer input { /* estiliza os inputs do maincontainer*/
+.mainContainer input {
+    /* estiliza os inputs do maincontainer*/
     display: block;
     width: 100%;
-    border-bottom: 2px solid #363636; 
+    border-bottom: 2px solid #363636;
     padding: 10px;
     font-size: .9rem;
-    margin-bottom: 40px;  
+    margin-bottom: 40px;
 }
 
-.mainContainer label { /* estiliza as label do maincontainer*/
+.mainContainer label {
+    /* estiliza as label do maincontainer*/
     display: block;
     width: 100%;
     font-weight: bold;
     font-size: .8rem;
 }
 
-input:focus, label:focus { /* classe usada para retirar a linha do input */
+input:focus,
+label:focus {
+    /* classe usada para retirar a linha do input */
     outline: none;
 }
 
-.mainContainer { /* div principal onde contem os intens */
+.mainContainer {
+    /* div principal onde contem os intens */
     width: 500px;
     background-color: white;
     margin: 25px auto;
@@ -182,33 +189,39 @@ input:focus, label:focus { /* classe usada para retirar a linha do input */
 .mainContainer h1 {
     text-align: center;
     margin-bottom: 25px;
-    font-size: 1,6rem;
+    font-size: 1, 6rem;
 }
 
-.mainContainer form { /* estilisa formulario*/
+.mainContainer form {
+    /* estilisa formulario*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.fullBox { /* div generica que ocupa uma linha inteira */
+.fullBox {
+    /* div generica que ocupa uma linha inteira */
     flex: 1 1 100%;
     position: relative;
 }
 
-.halfBox { /* div generica que ocupa metade uma linha */
+.halfBox {
+    /* div generica que ocupa metade uma linha */
     flex: 1 1 45%;
 }
 
-.spacing { /* classe usada para colocar um espaçamento entre div */
+.spacing {
+    /* classe usada para colocar um espaçamento entre div */
     margin-right: 2.5%;
 }
 
-.mainContainer input:focus { /* muda a cor da linha do input quando clicado*/
+.mainContainer input:focus {
+    /* muda a cor da linha do input quando clicado*/
     border-bottom: yellow solid;
 }
 
-.mainContainer input[type='submit'] { /* estiliza botão*/
+.mainContainer input[type='submit'] {
+    /* estiliza botão*/
     background-color: #111111;
     color: white;
     border: none;
@@ -221,7 +234,9 @@ input:focus, label:focus { /* classe usada para retirar a linha do input */
     font-weight: bold;
 }
 
-.mainContainer input[type='submit'].active, .mainContainer input[type='submit']:hover { /* estiliza ao clicar no botão*/
+.mainContainer input[type='submit'].active,
+.mainContainer input[type='submit']:hover {
+    /* estiliza ao clicar no botão*/
     background-color: #363636;
     color: yellow;
     transition: .5s;
@@ -232,55 +247,57 @@ input:focus, label:focus { /* classe usada para retirar a linha do input */
     margin-bottom: 10px;
 }
 
-#termosDeUso, #termosDeUso-label {
+#termosDeUso,
+#termosDeUso-label {
     display: inline-block;
     width: auto;
 }
 
-.template { /* classe usada para algo começar invisivel*/
+.template {
+    /* classe usada para algo começar invisivel*/
     display: none;
 }
 
 
 /* PARTE DO SOBRE*/
 
-.sobre{
+.sobre {
     width: 100%;
     height: 585px;
-    background: scroll; 
-    background-size:  cover;
-    background-color:#111111 ;
+    background: scroll;
+    background-size: cover;
+    background-color: #111111;
     border-bottom: 3px yellow solid;
 }
 
-.sobre h1{
+.sobre h1 {
     color: yellow;
     margin-top: 20px;
-    
+
 }
 
-.sobre h2{
+.sobre h2 {
     color: yellow;
     margin-top: 50px;
-    
+
 }
 
-.sobre p{
+.sobre p {
     width: 40%;
     font-weight: bold;
     color: yellow;
     text-align: left;
     margin-top: 30px;
     font-size: 15px;
-    text-justify:auto;
+    text-justify: auto;
     font-family: Arial, Helvetica, sans-serif;
     /*opacity: 0.75;*/
-    
-    
+
+
 }
 
-.sobre img{
-    float:right;
+.sobre img {
+    float: right;
     width: 400px;
     margin-top: -400px;
 }
@@ -296,14 +313,14 @@ input:focus, label:focus { /* classe usada para retirar a linha do input */
     background-position: -400px;
 }
 
-.solucaoBox{
+.solucaoBox {
     width: 40%;
     font-weight: bold;
     color: yellow;
     text-align: right;
     margin-top: 30px;
     font-size: 15px;
-    text-justify:auto;
+    text-justify: auto;
     font-family: Arial, Helvetica, sans-serif;
     float: right;
 }
@@ -344,7 +361,7 @@ input:focus, label:focus { /* classe usada para retirar a linha do input */
     margin-top: -25px
 }
 
- 
+
 /* Fim rodapé */
 .ganbiarra {
     height: 70vh;

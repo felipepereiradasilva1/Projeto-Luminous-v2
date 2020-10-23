@@ -104,26 +104,26 @@
             </form>
         </div>
         <div class="ganbiarra template" id="form3">
-        <div class="mainContainer ">
-            <h1>Orçamento</h1>
-            <form id="formOrcamento">
-                <div class="fullBox">
-                    <label for="inComodos">Quantidade de comôdos?</label>
-                    <input type="text" name="inComodos" id="inComodos" placeholder="Ex: 10m²">
-                </div>
-                <div class="fullBox">
-                    <label for="inMetragem">Qual a média em metros quadrados?</label>
-                    <input type="text" name="inMetragem" id="inMetragem" placeholder="Ex: 10m²">
-                </div>
-                <div class="fullBox">
-                    <input type="submit" id="" value="consultar">
-                </div>
-            </form>
-            <form id="orcamento"></form>
+            <div class="mainContainer ">
+                <h1>Orçamento</h1>
+                <form id="formOrcamento">
+                    <div class="fullBox">
+                        <label for="inComodos">Quantidade de comôdos?</label>
+                        <input type="text" name="inComodos" id="inComodos" placeholder="Ex: 10m²">
+                    </div>
+                    <div class="fullBox">
+                        <label for="inMetragem">Qual a média em metros quadrados?</label>
+                        <input type="text" name="inMetragem" id="inMetragem" placeholder="Ex: 10m²">
+                    </div>
+                    <div class="fullBox">
+                        <input type="submit" id="" value="consultar">
+                    </div>
+                </form>
+                <form id="orcamento"></form>
+            </div>
         </div>
-    </div>
 
-</div>
+    </div>
 
 
     <!-- Começo rodapé -->
@@ -166,12 +166,14 @@
         form2.style = 'display: ' + b + ';';
         form3.style = 'display: ' + c + ';';
     }
+
     function calcular() {
         var metros = Number(inMetragem.value);
         var comodos = Number(inComodos.value);
         var metrosComodos = metros * comodos;
         var resultado = metrosComodos * 100
-        orcamento.innerHTML = `O valor de nossos serviços será de R$${resultado} mensais deseja contratar? <input type="submit" id="contrtar" value="contratar">`;
+        orcamento.innerHTML =
+            `O valor de nossos serviços será de R$${resultado} mensais deseja contratar? <input type="submit" id="contrtar" value="contratar">`;
         formOrcamento.style = 'display: none;';
     }
 </script>

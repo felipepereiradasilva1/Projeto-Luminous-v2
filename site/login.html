@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,57 +8,59 @@
     <link rel="stylesheet" href="css/stylecadastro.css">
     <title>Login</title>
 </head>
+
 <body>
     <!-- navbar -->
-    <div class="navbar"> 
+    <div class="navbar">
         <div class="container">
             <label class="logo">LUMINOUS</label>
             <img src="img/logo.png">
-            <ul> 
+            <ul>
                 <li><a href="index.html">home</a></li>
                 <li><a href="cadastro.html">cadastro</a></li>
                 <li><a href="dashborad.html">Dashboard</a></li>
             </ul>
         </div>
-    </div> 
+    </div>
     <!-- tela de login -->
     <div class="container">
         <div class="mainContainer">
             <img src="img/avatar.png" alt="">
             <h1>Login</h1>
             <form>
-            <div class="fullBox">
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" placeholder="Digite seu Email" required>
-            </div>
-            <div class="fullBox">
-                <label for="senha">Senha:</label>
-                <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
-            </div>
-            <div class="fullBox">
-                <input type="submit" id="login" value="login" >
-            </div>
+                <div class="fullBox">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu Email" required>
+                </div>
+                <div class="fullBox">
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+                </div>
+                <div class="fullBox">
+                    <input type="submit" id="login" value="login">
+                </div>
             </form>
         </div>
     </div>
 
-        <!-- Começo rodapé -->
+    <!-- Começo rodapé -->
 
     <div class="futher">
         <div class="container">
             <div class="futherBox">
                 <img src="img/logo.png">
-                <h2>LUMINOUS</h2> 
+                <h2>LUMINOUS</h2>
                 <span class="copyright">© 2020 copyright - Luminous</span>
             </div>
         </div>
     </div>
-    
-        <!-- Fim Rodapé -->
+
+    <!-- Fim Rodapé -->
 </body>
+
 </html>
 <script>
-    document.querySelector('form').addEventListener('submit', event => { 
+    document.querySelector('form').addEventListener('submit', event => {
         event.preventDefault()
         location.href = 'index.html';
     });

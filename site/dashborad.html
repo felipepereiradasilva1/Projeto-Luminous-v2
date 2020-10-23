@@ -45,31 +45,31 @@
 
 		<div class="dashbord">
 			<canvas id="c_grafico2"></canvas>
-		<div class="opitons">	
-			<div class="sala">
-			<label for="sala">Escolha seu comodo:</label>
-			<select name="" id="sala">
-				<option value="0">-Selecione a Sala -</option>
-				<option value="1">Sala 1</option>
-				<option value="2">Sala 2</option>
-			</select>
-			</div>
-			<div class="periodo">
-			<label>Período </label>
-			 
-			<label for="comeco">de:</label> 
-			<select name="" id="comeco">
-				<option value="0">-Começo-</option>
-				<option value="1">01/01/2020</option>
-			</select> 
+			<div class="opitons">
+				<div class="sala">
+					<label for="sala">Escolha seu comodo:</label>
+					<select name="" id="sala">
+						<option value="0">-Selecione a Sala -</option>
+						<option value="1">Sala 1</option>
+						<option value="2">Sala 2</option>
+					</select>
+				</div>
+				<div class="periodo">
+					<label>Período </label>
 
-			<label for="termino">Até:</label> 
-			<select name="" id="termino">
-				<option value="0">-Término-</option>
-				<option value="1">01/05/2020</option>
-			</select>
+					<label for="comeco">de:</label>
+					<select name="" id="comeco">
+						<option value="0">-Começo-</option>
+						<option value="1">01/01/2020</option>
+					</select>
+
+					<label for="termino">Até:</label>
+					<select name="" id="termino">
+						<option value="0">-Término-</option>
+						<option value="1">01/05/2020</option>
+					</select>
+				</div>
 			</div>
-		</div>
 		</div>
 	</div>
 </body>
@@ -77,7 +77,6 @@
 </html>
 
 <script>
-
 	// var config = {
 	// 	type: 'line',
 	// 	data: {
@@ -181,8 +180,7 @@
 	function recuperarDadosIniciais() {
 		// esse "registros" será recuperado do backend futuramente
 
-		var registros2 = [
-			{
+		var registros2 = [{
 				momento: '10:00:00',
 				leitura: 550
 			},
@@ -217,8 +215,8 @@
 
 		// registros.length é a quantidade de itens em "registros"
 		while (contador < registros2.length) {
-			config_2.data.labels.push(registros2[contador].momento);  // incluir um novo momento
-			config_2.data.datasets[0].data.push(registros2[contador].leitura);  // incluir uma nova leitura
+			config_2.data.labels.push(registros2[contador].momento); // incluir um novo momento
+			config_2.data.datasets[0].data.push(registros2[contador].leitura); // incluir uma nova leitura
 			contador++;
 
 		}
@@ -234,7 +232,8 @@
 			var hora = agora.getHours();
 			var minuto = agora.getMinutes();
 			var segundo = agora.getSeconds();
-			var momento = `${hora > 9 ? '' : '0'}${hora}:${minuto > 9 ? '' : '0'}${minuto}:${segundo > 9 ? '' : '0'}${segundo}`;
+			var momento =
+				`${hora > 9 ? '' : '0'}${hora}:${minuto > 9 ? '' : '0'}${minuto}:${segundo > 9 ? '' : '0'}${segundo}`;
 
 			// esse "novoRegistro" será recuperado do backend futuramente
 			var novoRegistro = {
@@ -245,7 +244,7 @@
 			// tirando e colocando valores no gráfico
 			config.data.labels.shift(); // apagar o primeiro
 			config.data.labels.push(novoRegistro.momento); // incluir um novo momento
-			config.data.datasets[0].data.shift();  // apagar o primeiro
+			config.data.datasets[0].data.shift(); // apagar o primeiro
 			config.data.datasets[0].data.push(novoRegistro.leitura); // incluir uma nova leitura
 
 			// Atualiza o gráfico
@@ -271,7 +270,4 @@
 
 	// indicando que a função "plotarGrafico" será invocada assim que a página carregar
 	window.onload = plotarGrafico;
-
-
-
 </script>
