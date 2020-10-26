@@ -16,7 +16,7 @@ body {
 }
 
 main {
-    height: 100vh;
+    height: calc(100vh - 155px);
 }
 
 /* navbar */

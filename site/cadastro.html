@@ -22,41 +22,44 @@
         </div>
     </div>
     <!-- cadastro parte 1 -->
+
     <div class="container">
-        <div class="mainContainer" id="form1">
-            <h1>Cadastre seu usuario</h1>
-            <form>
-                <div class="fullBox">
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" placeholder="Digite seu E-mail" required>
-                </div>
-                <div class="halfBox spacing">
-                    <label for="nome">Nome:</label>
-                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
-                </div>
-                <div class="halfBox">
-                    <label for="sobrenome">Sobrenome:</label>
-                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome" required>
-                </div>
-                <div class="halfBox spacing">
-                    <label for="senha">Senha:</label>
-                    <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
-                </div>
-                <div class="halfBox">
-                    <label for="confirmacaoDeSenha">Confirmação de senha:</label>
-                    <input type="password" name="confirmacaoDeSenha" id="confirmacaoDeSenha"
-                        placeholder="Digite novamente sua senha" required>
-                </div>
-                <div class="fullBox">
-                    <input type="checkbox" name="termosDeUso" id="termosDeUso">
-                    <label for="termosDeUso" id="termosDeUso-label">Eu li e Aceito os <a href="#">termos de
-                            uso</a></label>
-                </div>
-                <div class="fullBox">
-                    <input type="submit" id="btNext" value="Avançar">
-                </div>
-            </form>
-        </div>
+        <main  id="form1">
+            <div class="mainContainer">
+                <h1>Cadastre seu usuario</h1>
+                <form>
+                    <div class="fullBox">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu E-mail" required>
+                    </div>
+                    <div class="halfBox spacing">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+                    </div>
+                    <div class="halfBox">
+                        <label for="sobrenome">Sobrenome:</label>
+                        <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome" required>
+                    </div>
+                    <div class="halfBox spacing">
+                        <label for="senha">Senha:</label>
+                        <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+                    </div>
+                    <div class="halfBox">
+                        <label for="confirmacaoDeSenha">Confirmação de senha:</label>
+                        <input type="password" name="confirmacaoDeSenha" id="confirmacaoDeSenha"
+                            placeholder="Digite novamente sua senha" required>
+                    </div>
+                    <div class="fullBox">
+                        <input type="checkbox" name="termosDeUso" id="termosDeUso">
+                        <label for="termosDeUso" id="termosDeUso-label">Eu li e Aceito os <a href="#">termos de
+                                uso</a></label>
+                    </div>
+                    <div class="fullBox">
+                        <input type="submit" id="btNext" value="Avançar">
+                    </div>
+                </form>
+            </div>
+        </main>
         <!-- cadastro parte 2 -->
         <div class="mainContainer template" id="form2">
             <h1>Cadastre sua empresa</h1>
@@ -103,7 +106,8 @@
                 </div>
             </form>
         </div>
-        <div class="ganbiarra template" id="form3">
+        <main class="template" id="form3">
+
             <div class="mainContainer ">
                 <h1>Orçamento</h1>
                 <form id="formOrcamento">
@@ -121,10 +125,9 @@
                 </form>
                 <form id="orcamento"></form>
             </div>
-        </div>
 
     </div>
-
+    </main>
 
     <!-- Começo rodapé -->
     <footer>
