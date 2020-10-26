@@ -18,7 +18,7 @@ body {
 /* navbar */
 .navbar {
     width: 100%;
-    height: 70px;
+    height: 75px;
     background-color: #111111;
     border-bottom: 3px yellow solid;
 }
@@ -82,7 +82,7 @@ a:hover {
 /* Começo CSS Contato */
 
 .contato {
-    border-bottom: #f7e70b 3px solid;
+    border-bottom: #f7e70b 2px solid;
     height: 600px;
     background: #adadad url(../img/background-contato.jpg) no-repeat scroll;
     background-size: cover;
