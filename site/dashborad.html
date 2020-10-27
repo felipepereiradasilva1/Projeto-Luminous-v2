@@ -143,13 +143,15 @@
 				borderColor: window.chartColors.black,
 				data: [],
 				fill: true,
+				fontCol: 
 			}]
 		},
 		options: {
 			responsive: true,
 			title: {
 				display: true,
-				text: 'Gráfico de histórico de Luminosidade'
+				text: 'Gráfico de histórico de Luminosidade',
+				fontColor: 'white'
 			},
 			tooltips: {
 				mode: 'index',
@@ -169,9 +171,11 @@
 				}],
 				yAxes: [{
 					display: true,
+					fontColor: 'white',
 					scaleLabel: {
 						display: true,
-						labelString: 'Lux'
+						labelString: 'Lux',
+						fontColor: 'white'
 					}
 				}]
 			}
