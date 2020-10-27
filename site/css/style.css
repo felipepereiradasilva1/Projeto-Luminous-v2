@@ -373,8 +373,14 @@ justify-content: space-around;
 width: 100%;
 }
 
-.p2{
+.p1{
     color: yellow;
+    font-weight: bold;
+}
+
+.p2 {
+    color: yellow;
+    
 }
 
 a{
