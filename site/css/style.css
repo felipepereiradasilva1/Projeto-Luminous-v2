@@ -338,6 +338,25 @@ label:focus {
 
 /* FIM DO SOLUÇÃO*/
 
+
+.contribuidores{
+    border-bottom: #f7e70b 3px solid;
+    height: 510px;
+    background: #130202 url(../img/slão.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+.contribui{
+    text-align: center;
+    color: yellow;
+
+}
+
+#p2{
+    color: yellow;
+    
+}
+
 /* COMEÇO RODAPÉ */
 
 .futher {
