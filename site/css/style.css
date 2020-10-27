@@ -313,7 +313,7 @@ label:focus {
 .solucao {
     background-color: #111111;
     padding: 20px 0;
-    background: url(../img/fundoSolucao2.jpg) no-repeat scroll;
+    background: url(../img/fundoSolucao2.jpg) no-repeat fixed;
     background-position: -400px;
 }
 
@@ -327,6 +327,7 @@ label:focus {
     text-justify: auto;
     font-family: Arial, Helvetica, sans-serif;
     float: right;
+    
 }
 
 
@@ -340,21 +341,44 @@ label:focus {
 
 
 .contribuidores{
-    border-bottom: #f7e70b 3px solid;
-    height: 510px;
-    background: #130202 url(../img/slão.jpg) no-repeat fixed;
+    height: 400px;
+    background-color: #202020;
     background-size: cover;
+    border-top:  #f7e70b 3px solid;
 }
 
 .contribui{
     text-align: center;
     color: yellow;
-
+    padding: 2rem;
 }
 
-#p2{
+.integrante{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagemQuemSomos{
+width: 150px;
+border-radius: 100px;
+border: 4px solid yellow;
+}
+
+.quemSomos{
+    padding: 2rem;
+display: flex;
+align-items: center;
+justify-content: space-around;
+width: 100%;
+}
+
+.p2{
     color: yellow;
-    
+}
+
+a{
+    text-decoration: none;
 }
 
 /* COMEÇO RODAPÉ */
