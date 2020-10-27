@@ -58,8 +58,8 @@ main {
     text-decoration: none;
 }
 
-a.active,
-a:hover {
+.navbar a.active,
+.navbar a:hover {
     background-color: #363636;
     color: yellow;
     transition: .5s;
