@@ -14,6 +14,7 @@ create table Empresa(
 insert into Empresa values
 	('02905478439219', 'BandTec', '5664-6776','proximo ao ragazzo'),
     ('91919191919191', 'Itau', '9292-8992', 'Proximo ao metro');
+    
 
 -- criando e inserindo dados na tabela usuario
 create table Usuario(
@@ -49,7 +50,7 @@ insert into endereco values
 
 
 -- criando e inserindo dados na tabela predio
-create table local(
+create table localidade(
 	fkcnpj char(14),
     fkcep char(8),
     nomePredio varchar(60),
@@ -60,24 +61,33 @@ create table local(
     primary key (fkCNPJ, fkCEP)
 );
 
-insert into predio values
+
+insert into localidade values
 	('02905478439219','01414905','Digital Building','595','Proximo ao ragazzo'),
-    ();
+    ('91919191919191','32223344','Edificio Itau','45','Proximo ao metro');
 
 create table dados(
 	idSensor int primary key auto_increment,
     lumens int,
     data_resgistro datetime,
-    sala varchar(40),
-    fkCNPJ char (14),
-    foreign key (fkCNPJ) references Empresa(CNPJ)
+    sala varchar(10),
+    fk_fkcnpj char(14),
+    fk_fkcep char(8),
+    foreign key (fk_fkcnpj) references localidade(fkcnpj),
+    foreign key (fk_fkcep) references localidade(fkcep)
 );
 
+desc dados;
 
+insert into dados values 
+	(null,300,'2020-10-05','sala 3A','02905478439219','01414905'),
+    (null,500,'2020-10-24','sala 4','91919191919191','32223344');
 
-
-
-show tables;
+select * from empresa;
+select * from usuario;
+select * from endereco;
+select * from localidade;
+select * from dados;
 
 
 
