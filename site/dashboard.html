@@ -46,7 +46,15 @@
 		<div class="dashbord">
 			<canvas id="c_grafico2"></canvas>
 			<div class="opitons">
-				<div class="sala">
+
+				<div class="predio">
+					<label for="predio">Selecione o seu Prédio:</label>
+					<select name="" id="predio">
+						<option value="0">-Selecione o prédio-</option>
+						<option value="1" onclick="aparecer()">Digital Building</option>
+					</select>
+				</div>
+				<div class="sala" style="display: none;" id="sala">
 					<label for="sala">Escolha seu comodo:</label>
 					<select name="" id="sala">
 						<option value="0">-Selecione a Sala -</option>
@@ -54,7 +62,7 @@
 						<option value="2">Sala 2</option>
 					</select>
 				</div>
-				<div class="periodo">
+				<div class="periodo" style="display: none;" id="periodo">
 					<label>Período </label>
 
 					<label for="comeco">de:</label>
@@ -87,6 +95,12 @@
 </html>
 
 <script>
+
+	function aparecer(){
+		sala.style.display = "block";
+		periodo.style.display = "block";
+	}
+
 	// var config = {
 	// 	type: 'line',
 	// 	data: {
@@ -142,8 +156,7 @@
 				backgroundColor: window.chartColors.yellow,
 				borderColor: window.chartColors.black,
 				data: [],
-				fill: true,
-				fontCol: 
+				fill: true,			
 			}]
 		},
 		options: {
@@ -156,6 +169,7 @@
 			tooltips: {
 				mode: 'index',
 				intersect: false,
+				
 			},
 			hover: {
 				mode: 'nearest',
@@ -166,7 +180,8 @@
 					display: true,
 					scaleLabel: {
 						display: true,
-						labelString: 'Horário da Leitura'
+						labelString: 'Horário da Leitura',
+						fontColor: 'white '
 					}
 				}],
 				yAxes: [{
