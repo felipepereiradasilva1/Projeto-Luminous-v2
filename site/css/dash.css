@@ -88,6 +88,10 @@ aside .container .relatorio header {
     text-align: right;
 }
 
+.dashbord canvas{
+    width: 10px;
+}
+
 /* #c_grafico2{
     width: 70%; 
     margin-top: 150px;
