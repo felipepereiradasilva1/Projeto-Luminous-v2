@@ -2,86 +2,86 @@
 <html>
 
 <head>
-	<meta charset="UTF-8">
-	<title>Dashbord</title>
-	<script src="https://www.chartjs.org/dist/2.9.3/Chart.min.js"></script>
-	<script src="https://www.chartjs.org/samples/latest/utils.js"></script>
+    <meta charset="UTF-8">
+    <title>Dashbord</title>
+    <script src="https://www.chartjs.org/dist/2.9.3/Chart.min.js"></script>
+    <script src="https://www.chartjs.org/samples/latest/utils.js"></script>
 
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/dash.css">
-	<style>
-		canvas {
-			-moz-user-select: none;
-			-webkit-user-select: none;
-			-ms-user-select: none;
-		}
-	</style>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dash.css">
+    <style>
+        canvas {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+    </style>
 </head>
 
 <body>
 
-	<!-- navbar -->
-	<div class="navbar">
-		<div class="container">
-			<label class="logo">LUMINOUS</label>
-			<img src="img/logo.png">
-			<ul>
-				<li><a href="index.html">home</a></li>
-				<li><a href="login.html">Sair</a></li>
-			</ul>
-		</div>
-	</div>
+    <!-- navbar -->
+    <div class="navbar">
+        <div class="container">
+            <label class="logo">LUMINOUS</label>
+            <img src="img/logo.png">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="login.html">Sair</a></li>
+            </ul>
+        </div>
+    </div>
 
-	<div class="dash-page">
-		<aside>
-			<div class="container">
-				<div class="relatorio">
-					<header>
-						<h1>Relatório</h1>
-					</header>
-				</div>
-			</div>
-		</aside>
+    <div class="dash-page">
+        <aside>
+            <div class="container">
+                <div class="relatorio">
+                    <header>
+                        <h1>Relatório</h1>
+                    </header>
+                </div>
+            </div>
+        </aside>
 
-		<div class="dashbord">
-			<canvas id="c_grafico2"></canvas>
-			<div class="opitons">
+        <div class="dashbord">
+            <canvas id="c_grafico2"></canvas>
+            <div class="opitons">
 
-				<div class="predio">
-					<label for="predio">Selecione o seu Prédio:</label>
-					<select name="" id="predio">
-						<option value="0">-Selecione o prédio-</option>
-						<option value="1" onclick="aparecer()">Digital Building</option>
+                <div class="predio">
+                    <label for="predio">Selecione o seu Prédio:</label>
+                    <select name="" id="predio" onclick="aparecer()>
+						<option value=" 0 ">-Selecione o prédio-</option>
+						<option value="1 "">Digital Building</option>
 					</select>
-				</div>
-				<div class="sala" style="display: none;" id="sala">
-					<label for="sala">Escolha seu comodo:</label>
-					<select name="" id="sala">
+                </div>
+                <div class="sala" id="sala">
+                    <label for="sala">Escolha seu comodo:</label>
+                    <select name="" id="sala">
 						<option value="0">-Selecione a Sala -</option>
 						<option value="1">Sala 1</option>
 						<option value="2">Sala 2</option>
 					</select>
-				</div>
-				<div class="periodo" style="display: none;" id="periodo">
-					<label>Período </label>
+                </div>
+                <div class="periodo" id="periodo">
+                    <label>Período </label>
 
-					<label for="comeco">de:</label>
-					<select name="" id="comeco">
+                    <label for="comeco">de:</label>
+                    <select name="" id="comeco">
 						<option value="0">-Começo-</option>
 						<option value="1">01/01/2020</option>
 					</select>
 
-					<label for="termino">Até:</label>
-					<select name="" id="termino">
+                    <label for="termino">Até:</label>
+                    <select name="" id="termino">
 						<option value="0">-Término-</option>
 						<option value="1">01/05/2020</option>
 					</select>
-				</div>
-			</div>
-		</div>
-	</div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-	<div class="futher">
+    <div class="futher">
         <div class="container">
             <div class="futherBox">
                 <img src="img/logo.png">
@@ -95,208 +95,201 @@
 </html>
 
 <script>
+    // Function aparecer() {
+    //     sala.style.display = 'block';
+    //     periodo.style.display = 'block';
+    // }
 
-	function aparecer(){
-		sala.style.display = "block";
-		periodo.style.display = "block";
-	}
+    // var config = {
+    // 	type: 'line',
+    // 	data: {
+    // 		labels: [],
+    // 		datasets: [{
+    // 			label: 'Temperatura',
+    // 			backgroundColor: window.chartColors.blue,
+    // 			borderColor: window.chartColors.blue,
+    // 			data: [],
+    // 			fill: true,
+    // 		}]
+    // 	},
+    // 	options: {
+    // 		responsive: true,
+    // 		title: {
+    // 			display: true,
+    // 			text: 'Gráfico de histórico de temperatura'
 
-	// var config = {
-	// 	type: 'line',
-	// 	data: {
-	// 		labels: [],
-	// 		datasets: [{
-	// 			label: 'Temperatura',
-	// 			backgroundColor: window.chartColors.blue,
-	// 			borderColor: window.chartColors.blue,
-	// 			data: [],
-	// 			fill: true,
-	// 		}]
-	// 	},
-	// 	options: {
-	// 		responsive: true,
-	// 		title: {
-	// 			display: true,
-	// 			text: 'Gráfico de histórico de temperatura'
+    // 		},
+    // 		tooltips: {
+    // 			mode: 'index',
+    // 			intersect: false,
+    // 		},
+    // 		hover: {
+    // 			mode: 'nearest',
+    // 			intersect: true
+    // 		},
+    // 		scales: {
+    // 			xAxes: [{
+    // 				display: true,
+    // 				scaleLabel: {
+    // 					display: true,
+    // 					labelString: 'Horário da Leitura'
+    // 				}
+    // 			}],
+    // 			yAxes: [{
+    // 				display: true,
+    // 				scaleLabel: {
+    // 					display: true,
+    // 					labelString: 'ºC'
+    // 				}
+    // 			}]
+    // 		}
+    // 	}
+    // };
 
-	// 		},
-	// 		tooltips: {
-	// 			mode: 'index',
-	// 			intersect: false,
-	// 		},
-	// 		hover: {
-	// 			mode: 'nearest',
-	// 			intersect: true
-	// 		},
-	// 		scales: {
-	// 			xAxes: [{
-	// 				display: true,
-	// 				scaleLabel: {
-	// 					display: true,
-	// 					labelString: 'Horário da Leitura'
-	// 				}
-	// 			}],
-	// 			yAxes: [{
-	// 				display: true,
-	// 				scaleLabel: {
-	// 					display: true,
-	// 					labelString: 'ºC'
-	// 				}
-	// 			}]
-	// 		}
-	// 	}
-	// };
+    var config_2 = {
+        type: 'line',
+        data: {
+            labels: [],
+            datasets: [{
+                label: 'Luminosidade',
+                backgroundColor: window.chartColors.yellow,
+                borderColor: window.chartColors.black,
+                data: [],
+                fill: true,
+            }]
+        },
+        options: {
+            responsive: true,
+            title: {
+                display: true,
+                text: 'Gráfico de histórico de Luminosidade',
+                fontColor: 'white'
+            },
+            tooltips: {
+                mode: 'index',
+                intersect: false,
 
-	var config_2 = {
-		type: 'line',
-		data: {
-			labels: [],
-			datasets: [{
-				label: 'Luminosidade',
-				backgroundColor: window.chartColors.yellow,
-				borderColor: window.chartColors.black,
-				data: [],
-				fill: true,			
-			}]
-		},
-		options: {
-			responsive: true,
-			title: {
-				display: true,
-				text: 'Gráfico de histórico de Luminosidade',
-				fontColor: 'white'
-			},
-			tooltips: {
-				mode: 'index',
-				intersect: false,
-				
-			},
-			hover: {
-				mode: 'nearest',
-				intersect: true
-			},
-			scales: {
-				xAxes: [{
-					display: true,
-					scaleLabel: {
-						display: true,
-						labelString: 'Horário da Leitura',
-						fontColor: 'white '
-					}
-				}],
-				yAxes: [{
-					display: true,
-					fontColor: 'white',
-					scaleLabel: {
-						display: true,
-						labelString: 'Lux',
-						fontColor: 'white'
-					}
-				}]
-			}
-		}
-	};
+            },
+            hover: {
+                mode: 'nearest',
+                intersect: true
+            },
+            scales: {
+                xAxes: [{
+                    display: true,
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Horário da Leitura',
+                        fontColor: 'white '
+                    }
+                }],
+                yAxes: [{
+                    display: true,
+                    fontColor: 'white',
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Lux',
+                        fontColor: 'white'
+                    }
+                }]
+            }
+        }
+    };
 
-	// esse "sortearTemperatura()" será desnecessário quando usarmos o backend futuramente
+    // esse "sortearTemperatura()" será desnecessário quando usarmos o backend futuramente
 
-	function sortearLuminosidade() {
-		var limiteMin = 400;
-		var limiteMax = 1200;
-		var minimoAbsoluto = Math.abs(limiteMin);
-		return (Math.random() * (minimoAbsoluto + limiteMax) - minimoAbsoluto).toFixed(1);
-	}
+    function sortearLuminosidade() {
+        var limiteMin = 400;
+        var limiteMax = 1200;
+        var minimoAbsoluto = Math.abs(limiteMin);
+        return (Math.random() * (minimoAbsoluto + limiteMax) - minimoAbsoluto).toFixed(1);
+    }
 
-	function recuperarDadosIniciais() {
-		// esse "registros" será recuperado do backend futuramente
+    function recuperarDadosIniciais() {
+        // esse "registros" será recuperado do backend futuramente
 
-		var registros2 = [{
-				momento: '10:00:00',
-				leitura: 550
-			},
-			{
-				momento: '11:00:00',
-				leitura: 520
-			},
-			{
-				momento: '13:00:00',
-				leitura: 700
-			},
-			{
-				momento: '14:00:00',
-				leitura: 650
-			},
-			{
-				momento: '15:00:00',
-				leitura: 900
-			},
-			{
-				momento: '16:00:00',
-				leitura: 1000
-			},
-			{
-				momento: '17:00:00',
-				leitura: 600
-			}
+        var registros2 = [{
+                momento: '10:00:00',
+                leitura: 550
+            }, {
+                momento: '11:00:00',
+                leitura: 520
+            }, {
+                momento: '13:00:00',
+                leitura: 700
+            }, {
+                momento: '14:00:00',
+                leitura: 650
+            }, {
+                momento: '15:00:00',
+                leitura: 900
+            }, {
+                momento: '16:00:00',
+                leitura: 1000
+            }, {
+                momento: '17:00:00',
+                leitura: 600
+            }
 
-		];
+        ];
 
-		var contador = 0;
+        var contador = 0;
 
-		// registros.length é a quantidade de itens em "registros"
-		while (contador < registros2.length) {
-			config_2.data.labels.push(registros2[contador].momento); // incluir um novo momento
-			config_2.data.datasets[0].data.push(registros2[contador].leitura); // incluir uma nova leitura
-			contador++;
+        // registros.length é a quantidade de itens em "registros"
+        while (contador < registros2.length) {
+            config_2.data.labels.push(registros2[contador].momento); // incluir um novo momento
+            config_2.data.datasets[0].data.push(registros2[contador].leitura); // incluir uma nova leitura
+            contador++;
 
-		}
+        }
 
 
-	}
+    }
 
-	function receberNovasLeituras() {
-		setTimeout(() => {
+    function receberNovasLeituras() {
+        setTimeout(() => {
 
-			// esses "agora" etc até "momentos" serão desnecessários quando usarmos o backend futuramente
-			var agora = new Date();
-			var hora = agora.getHours();
-			var minuto = agora.getMinutes();
-			var segundo = agora.getSeconds();
-			var momento =
-				`${hora > 9 ? '' : '0'}${hora}:${minuto > 9 ? '' : '0'}${minuto}:${segundo > 9 ? '' : '0'}${segundo}`;
+            // esses "agora" etc até "momentos" serão desnecessários quando usarmos o backend futuramente
+            var agora = new Date();
+            var hora = agora.getHours();
+            var minuto = agora.getMinutes();
+            var segundo = agora.getSeconds();
+            var momento =
+                `${hora > 9 ? '' : '0'}${hora}:${minuto > 9 ? '' : '0'}${minuto}:${segundo > 9 ? '' : '0'}${segundo}`;
 
-			// esse "novoRegistro" será recuperado do backend futuramente
-			var novoRegistro = {
-				momento: momento,
-				leitura: sortearLuminosidade()
-			};
+            // esse "novoRegistro" será recuperado do backend futuramente
+            var novoRegistro = {
+                momento: momento,
+                leitura: sortearLuminosidade()
+            };
 
-			// tirando e colocando valores no gráfico
-			config.data.labels.shift(); // apagar o primeiro
-			config.data.labels.push(novoRegistro.momento); // incluir um novo momento
-			config.data.datasets[0].data.shift(); // apagar o primeiro
-			config.data.datasets[0].data.push(novoRegistro.leitura); // incluir uma nova leitura
+            // tirando e colocando valores no gráfico
+            config_2.data.labels.shift(); // apagar o primeiro
+            config_2.data.labels.push(novoRegistro2.momento); // incluir um novo momento
+            config_2.data.datasets[0].data.shift(); // apagar o primeiro
+            config_2.data.datasets[0].data.push(novoRegistro2.leitura); // incluir uma nova leitura
 
-			// Atualiza o gráfico
-			window.graficoLinha.update();
+            // Atualiza o gráfico
+            window.graficoLinha.update();
 
-			// agendar a chamada da mesma função para daqui a 7 segundos
-			receberNovasLeituras();
+            // agendar a chamada da mesma função para daqui a 7 segundos
+            receberNovasLeituras();
 
-		}, 1, 296e+7); // 1,296e+7 -> 3600seg -> 1hora
-	}
+        }, 1, 296e+7); // 1,296e+7 -> 3600seg -> 1hora
+    }
 
-	function plotarGrafico() {
-		// chamar os 7 últimos registros de leitura
-		recuperarDadosIniciais();
+    function plotarGrafico() {
+        // chamar os 7 últimos registros de leitura
+        recuperarDadosIniciais();
 
-		// criação do gráfico na página
-		var ctx_2 = document.getElementById('c_grafico2').getContext('2d');
-		window.graficoLinha = new Chart(ctx_2, config_2);
+        // criação do gráfico na página
+        var ctx_2 = document.getElementById('c_grafico2').getContext('2d');
+        window.graficoLinha = new Chart(ctx_2, config_2);
 
-		// função que agenda a recuperação da última leitura para daqui a 7 segundos
-		receberNovasLeituras();
-	}
+        // função que agenda a recuperação da última leitura para daqui a 7 segundos
+        receberNovasLeituras();
+    }
 
-	// indicando que a função "plotarGrafico" será invocada assim que a página carregar
-	window.onload = plotarGrafico;
+    // indicando que a função "plotarGrafico" será invocada assim que a página carregar
+    window.onload = plotarGrafico;
 </script>
