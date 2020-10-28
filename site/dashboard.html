@@ -49,12 +49,12 @@
 
                 <div class="predio">
                     <label for="predio">Selecione o seu Prédio:</label>
-                    <select name="" id="predio" onclick="aparecer()>
-						<option value=" 0 ">-Selecione o prédio-</option>
-						<option value="1 "">Digital Building</option>
+                    <select name="" id="predio" oninput="aparecer()">
+						<option value="0" >-Selecione o prédio-</option>
+						<option value="1">Digital Building</option>
 					</select>
                 </div>
-                <div class="sala" id="sala">
+                <div class="sala" id="salas" style="display: none;">
                     <label for="sala">Escolha seu comodo:</label>
                     <select name="" id="sala">
 						<option value="0">-Selecione a Sala -</option>
@@ -62,7 +62,7 @@
 						<option value="2">Sala 2</option>
 					</select>
                 </div>
-                <div class="periodo" id="periodo">
+                <div class="periodo" id="periodo" style="display: none;">
                     <label>Período </label>
 
                     <label for="comeco">de:</label>
@@ -95,10 +95,10 @@
 </html>
 
 <script>
-    // Function aparecer() {
-    //     sala.style.display = 'block';
-    //     periodo.style.display = 'block';
-    // }
+    function aparecer() {
+        salas.style = "display: block;";
+        periodo.style = "display: block;";
+    }
 
     // var config = {
     // 	type: 'line',
@@ -145,7 +145,7 @@
     // 		}
     // 	}
     // };
-
+    Chart.defaults.global.defaultFontColor = 'white';
     var config_2 = {
         type:'line',
         data: {
